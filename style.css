@@ -186,33 +186,6 @@ footer{
     filter: invert();
 }
 
-.copiar {
-    position: relative;
-    /* Estilo base del botón */
-  }
-  
-  .copiar::before {
-    width: 100px;
-    content: "Copia el texto al portapapeles"; /* Utiliza el atributo data-tooltip para el contenido */
-    position: absolute;
-    bottom: -25px; /* Ajusta la posición del comentario según sea necesario */
-    left: 100%; /* Ajusta la posición del comentario según sea necesario */
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    font-size: 14px;
-    border-radius: 4px;
-    opacity: 0; /* Inicialmente oculto */
-    pointer-events: none; /* Evita que el comentario interfiera con los eventos del ratón */
-    transition: opacity 0.3s ease;
-}
-
-.copiar:hover::before {
-    opacity: 1; /* Mostrar el comentario al hacer hover */
-    transition-delay: 1s;
-  }
-  
-
 aside{
     grid-column: 17/24;
     grid-row: 2/16;
@@ -297,13 +270,26 @@ aside{
    }
    footer{
     grid-column: 1/25;
-   }
+   }    
 
    aside img{
     height: 90%;
     width: auto;
     display: none;
    }
+   .button1{
+    grid-column: 2/5;
+    background: rgba(1, 31, 73, 0.734);
+    color: #fff;
+   }
+
+    .button2{
+        grid-column: 10/13;
+    }
+
+    .copiar{
+        grid-column: 7;
+    }
   }
 
   /* Mobile */
